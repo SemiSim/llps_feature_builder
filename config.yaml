@@ -1,0 +1,10 @@
+data_dir: data
+llpsdb_csv: data\llpsdb.csv
+fasta_dir: fasta
+output_csv: features.csv
+missing_log: missing_files.log
+origin_log: feature_origins.log
+split_output_dir: split_data
+label_column: llps_label
+test_size: 0.2
+random_state: 42
