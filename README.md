@@ -1,36 +1,6 @@
 LLPS Feature Builder
-A modular Python package for building and splitting liquid–liquid phase separation (LLPS) feature matrices from various bioinformatics data sources, including PONDR, SAPS, PLAAC, STRING, BioGRID, the LLPSDB v2.0, and NetSurfP 2.0 predictions. The matrices generated and split with this package are ready for direct import to train the SemiSim model.
 
-STRUCTURE
-semisim-root/
-├── data/                      # Raw input data
-│   ├── pondr/                 # p_<proteinID>_pondr.txt
-│   ├── saps/                  # p_<proteinID>_saps.txt
-│   ├── plaac/                 # p_<proteinID>_plaac.txt (TSV)
-│   ├── string/                # p_<proteinID>_string.txt (TSV)
-│   ├── biogrid/               # p_<proteinID>_biogrid.txt (TSV)
-│   └── llpsdb.csv             # labels: protein_id, llps_label
-│
-├── fasta/                     # FASTA sequences named p_<proteinID>_fasta.txt
-│
-├── split_data/                # Auto-generated train/test splits
-│   ├── X_train.csv
-│   ├── X_test.csv
-│   ├── y_train.csv
-│   └── y_test.csv
-│
-├── llps_feature_builder/      # Package source
-│   ├── __init__.py		
-│   ├── main.py                # CLI entry point
-│   ├── parsers/               # Individual parser modules
-│   ├── builder/
-│   │   └── matrix_builder.py  # Core build & split logic
-│   └── utils/                 # Utility modules
-│       └── config_loader.py
-│
-├── config.yaml            	# Configuration file
-├── setup.py                   # Packaging metadata
-└── README.md                  # This documentation:)
+A modular Python package for building and splitting liquid–liquid phase separation (LLPS) feature matrices from various bioinformatics data sources, including PONDR, SAPS, PLAAC, STRING, BioGRID, the LLPSDB v2.0, and NetSurfP 2.0 predictions. The matrices generated and split with this package are ready for direct import to train the SemiSim model.
 
 
 INSTALLATION
